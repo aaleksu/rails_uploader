@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Ruby gem for file uploading on Rails project"
   s.description = "Implements general logic of file uploading"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   #s.add_dependency "rails", "~> 4.0.4"

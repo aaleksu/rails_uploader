@@ -16,6 +16,8 @@ namespace :rails_uploader do
       rescue Exception => e
         puts e.message
       end
+    else
+      puts "WTF?"
     end
   end
 end
