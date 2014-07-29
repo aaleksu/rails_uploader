@@ -1,7 +1,7 @@
 require 'RMagick'
 
-module MyTest
-  require 'my_test/railtie' if defined?(Rails)
+module RailsUploader
+  require 'rails_uploader/railtie' if defined?(Rails)
 
   @@thumbs = []
   mattr_accessor :thumbs

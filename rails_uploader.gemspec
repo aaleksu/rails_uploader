@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "my_test/version"
+require "rails_uploader/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "my_test"
-  s.version     = MyTest::VERSION
-  s.authors     = ["my test gem"]
+  s.name        = "rails_uploader"
+  s.version     = RailsUploader::VERSION
+  s.authors     = ["Alex Anisimov"]
   s.email       = ["a.aleksu@gmail.com"]
-  s.homepage    = "http://forfundev.com"
-  s.summary     = "my test gem"
-  s.description = "my test gem"
+  s.homepage    = "https://github.com/aaleksu/rails_uploader"
+  s.summary     = "Ruby gem for file uploading on Rails project"
+  s.description = "Implements general logic of file uploading"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

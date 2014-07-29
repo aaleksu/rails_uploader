@@ -1,4 +1,4 @@
-MyTest.setup do |config|
+RailsUploader.setup do |config|
   config.thumbs = ['100x100', '200x200']
   config.upload_dir = ''
   config.resizable_attributes = []
