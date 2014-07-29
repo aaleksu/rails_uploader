@@ -19,3 +19,15 @@ Then execute init task:
 <pre>
 rake rails_uploader:init
 </pre>
+
+
+Usage
+-----
+
+Define uploadable attributes in your model:
+
+<pre>
+def uploadable_attributes
+  %w[userpic]
+end
+</pre>
