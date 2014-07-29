@@ -11,9 +11,15 @@ module RailsUploader
 
   @@resizable_attributes = []
   mattr_accessor :resizable_attributes
+  
+  @@images_extnames = []
+  mattr_accessor :images_extnames
 
   @@images_types = []
   mattr_accessor :images_types
+  
+  @@docs_extnames = []
+  mattr_accessor :docs_extnames
 
   @@docs_types = []
   mattr_accessor :docs_types
