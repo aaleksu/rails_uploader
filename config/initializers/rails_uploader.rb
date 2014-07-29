@@ -13,3 +13,7 @@ RailsUploader.setup do |config|
     'application/*'
     'application/*']
 end
+
+class ActiveRecord::Base
+  include RailsUploader
+end
