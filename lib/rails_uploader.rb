@@ -43,7 +43,7 @@ module RailsUploader
     begin
       return if self.class.nil?
 
-      @target_dir = File.join(Rails.root, @@upload_dir, self.class.name.downcase)
+      @target_dir = File.join(Rails.root, 'public', @@upload_dir, self.class.name.downcase)
     
       FileUtils.mkdir_p @target_dir unless File.exists? @target_dir
     
