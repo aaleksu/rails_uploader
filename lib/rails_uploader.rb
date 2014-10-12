@@ -42,8 +42,9 @@ module RailsUploader
   def upload
     begin
       return if self.class.nil?
-
-      @target_dir = File.join(Rails.root, 'public', @@upload_dir, self.class.name.downcase)
+      
+      model_name = self.class.name.downcase
+      @target_dir = File.join(Rails.root, 'public', @@upload_dir, model_name)
     
       FileUtils.mkdir_p @target_dir unless File.exists? @target_dir
     
@@ -55,7 +56,7 @@ module RailsUploader
         attr_path = File.join @target_dir, unique_name
         new_image = File.open(attr_path, 'wb') { |f| f.write(@current_attr.read)}
 
-        self.send "#{attr}=", "#{@@upload_dir}#{unique_name}"
+        self.send "#{attr}=", "#{@@upload_dir}#{model_name}#{unique_name}"
 
         make_thumbs if self.resizable_attributes.include? attr
       end
