@@ -24,6 +24,9 @@ rake rails_uploader:init
 Usage
 -----
 
+Define directory to upload in config/initializers/rails_uploader.rb
+
+
 Define uploadable attributes in your model:
 
 <pre>
