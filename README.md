@@ -10,7 +10,7 @@ Get started
 Add it to your Gemfile with:
 
 <pre>
-gem 'rails_uploader'
+gem 'rails_uploader', :git => 'https://github.com/aaleksu/rails_uploader.git'
 </pre>
 
 
