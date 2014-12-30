@@ -50,6 +50,8 @@ module RailsUploader
     
       self.uploadable_attributes.each do |attr|
         @current_attr = self.method(attr).call
+        
+        return if @current_attr.nil?
 
         next if @current_attr.nil?
 
