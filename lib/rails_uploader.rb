@@ -50,10 +50,8 @@ module RailsUploader
     
       self.uploadable_attributes.each do |attr|
         @current_attr = self.method(attr).call
-        
-        return if @current_attr.nil?
 
-        next if @current_attr.nil?
+        next if @current_attr.nil? || @current_attr.is_a?(String)
 
         file_unique_name = unique_name
         attr_path = File.join @target_dir, file_unique_name
