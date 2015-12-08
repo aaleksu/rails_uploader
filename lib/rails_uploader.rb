@@ -1,4 +1,4 @@
-require 'RMagick'
+require 'rmagick'
 
 module RailsUploader
   require 'rails_uploader/railtie' if defined?(Rails)
