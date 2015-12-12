@@ -57,7 +57,7 @@ module RailsUploader
         attr_path = File.join @target_dir, file_unique_name
         new_image = File.open(attr_path, 'wb') { |f| f.write(@current_attr.read)}
 
-        self.send "#{attr}=", File.join(@@upload_dir, model_name, file_unique_name)
+        self.send "#{attr}=", file_unique_name
 
         make_thumbs if self.resizable_attributes.include? attr
       end
